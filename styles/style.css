@@ -1,0 +1,73 @@
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
+body {
+  font-family: "Sevillana", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-image: url("../image/1684630932_polinka-top-p-kartinki-na-rabochii-stol-novogodnie-vkont-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: wheat;
+  padding-top: 20px;
+}
+.time {
+  margin: 0;
+}
+.counter {
+  text-align: center;
+  display: flex;
+  margin-bottom: 45em;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+.value {
+  font-size: 40px;
+}
+.caption {
+  font-size: 20px;
+}
+#output {
+  font-family: "Carattere", cursive;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  font-size: 40px;
+}
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.snow {
+  position: fixed;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.6;
+  pointer-events: none;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
